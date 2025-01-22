@@ -15,7 +15,9 @@ body{
     align-items: center;
     padding: 20px 80px;
 }
-
+.Hamburger_icon{
+    display: none;
+}
 .logo{
     display: flex;
     color: rgb(17, 17, 17);
@@ -306,5 +308,99 @@ footer .right{
     }
     to {
       transform: translateX(-100%);
+    }
+  }
+
+
+
+  @media screen and (max-width:576px) {
+
+    .nav h2,button{
+        display: none;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .nav{
+        padding:10px 10px;
+        border: 0.5px solid rgb(254, 163, 1);
+    }
+
+    .Hamburger_icon{
+        display: flex;
+        width: 22.5px;
+        height: 25px;
+    }
+
+
+    .banner{
+        flex-direction: column-reverse;
+        padding: 0 25px;
+    }
+    .banner-image{
+        padding:0 20px;
+    }
+    .banner-text{
+        text-align: center;
+    }
+    .heading, .word1, .word2{
+        font-size: 32px;
+        padding: 0px;
+    }
+
+    .cards{
+        flex-direction: column;
+        padding: 36px 28px;
+    }
+    .curriculum h2{
+        text-align: center;
+        font-size: 26px;
+    }
+
+    .curriculum button{
+        display: none;
+    }
+
+    .all-story h2{
+        font-size: 26px;
+    }
+
+    .large-stories{
+        display: none;
+    }
+
+    .story h4{
+        font-size: 9.13px;
+    }
+
+    .stories{
+        padding: 20px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .small-stories h4{
+        padding: 20px;
+    }
+
+    footer{
+        flex-direction: column;
+        text-align:start;
+        padding: 20px;
+        align-items:start;
+    }
+
+    footer .right{
+        align-items: flex-start;
+        
+    }
+
+    footer h4{
+        font-size: 20px;
+    }
+
+    footer .middle{
+        font-size: 16px;
     }
   }
