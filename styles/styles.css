@@ -6,6 +6,8 @@
 
 body{
     /* padding: 0 80px; */
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: "Quicksand", serif;
 }
@@ -337,11 +339,21 @@ footer .right{
 
     .banner{
         flex-direction: column-reverse;
-        padding: 0 25px;
+        padding:0;
+        gap: 0;
+        justify-content: center;
+    }
+    .banner-image img{
+        width: 380px;
     }
     .banner-image{
-        padding:0 20px;
+        text-align: center;
     }
+
+    .banner p{
+        font-size: 12px;
+    }
+
     .banner-text{
         text-align: center;
     }
@@ -360,12 +372,18 @@ footer .right{
     }
 
     .curriculum button{
-        display: none;
+        visibility: hidden;
+        /* display: none; */
+    }
+
+    .curriculum{
+        padding-bottom: 20px;
     }
 
     .all-story h2{
         font-size: 26px;
     }
+
 
     .large-stories{
         display: none;
@@ -403,4 +421,6 @@ footer .right{
     footer .middle{
         font-size: 16px;
     }
+
+
   }
