@@ -142,6 +142,11 @@ body{
     padding: 55px 20px 60px;
     border-radius: 15px;
 }
+
+.card-image{
+    height: 135px;
+}
+
 .card2{
     display: flex;
     flex-direction: column;
@@ -292,7 +297,7 @@ footer .right{
 }
 
 .marquee {
-    overflow: hidden;
+    overflow:hidden;
     white-space: nowrap;
     background-color: #f4f4f4;
     color: #333;
@@ -421,6 +426,4 @@ footer .right{
     footer .middle{
         font-size: 16px;
     }
-
-
-  }
+}
